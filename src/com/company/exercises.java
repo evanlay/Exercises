@@ -7,9 +7,11 @@ public class exercises {
         System.out.println(addOdds(13));
         System.out.println(howManyYears(111.2,120));
         System.out.println(howManyYears(111.2,150));
-        System.out.println(sumDigits(9));
+        System.out.println(sumDigits(45));
         System.out.println(sumDigits(10));
         System.out.println(sumDigits(11));
+        sillyNumbers();
+        sillyNumbers2();
     }
 
     public static int addOdds(int n) {
@@ -30,13 +32,32 @@ public class exercises {
         return year;
     }
     public static int sumDigits(int x) {
-        int y = 0;
         int sum = 0;
-        while (y < x) {
-            y++;
-            sum = y / 10;
-            sum += y % 10;
+        while (x != 0) {
+            sum += x % 10;
+            x = x / 10;
         }
         return sum;
+    }
+    public static void sillyNumbers() {
+        int x = 0;
+        int y = 3;
+        for (x = 0; x < y; x++) {
+            System.out.println("000111222333444555666777888999");
+        }
+    }
+    public static void sillyNumbers2() {
+        int x = 0;
+        int y = 4;
+        for (x = 0; x < y; x++) {
+            System.out.println("999999999888888887777777666666555554444333221");
+        }
+    }
+    public static void dollarsAndStars() {
+        int x = 0;
+        int y = 7;
+        for (x = 0; x < y; x++) {
+            
+        }
     }
 }
