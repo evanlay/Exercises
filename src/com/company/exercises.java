@@ -7,7 +7,7 @@ public class exercises {
         System.out.println(addOdds(13));
         System.out.println(howManyYears(111.2,120));
         System.out.println(howManyYears(111.2,150));
-        System.out.println(sumDigits(45));
+        System.out.println(sumDigits(9));
         System.out.println(sumDigits(10));
         System.out.println(sumDigits(11));
     }
