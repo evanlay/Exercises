@@ -46,17 +46,25 @@ public class    exercises {
 
     public static void sillyNumbers() {
         int x = 0;
-        int y = 3;
-        for (x = 0; x < y; x++) {
-            System.out.println("000111222333444555666777888999");
+        int y = 9;
+        for (x = 0; x <= y; x++) {
+            for (int z = 0; z < 3; z++) {
+                System.out.print(x);
+            }
         }
+        System.out.println("");
     }
 
     public static void sillyNumbers2() {
         int x = 0;
-        int y = 4;
-        for (x = 0; x < y; x++) {
-            System.out.println("999999999888888887777777666666555554444333221");
+        int y = 0;
+        for (int w = 0; w < 4; w++) {
+            for (x = 9; x > y; x--) {
+                for (int z = 0; z < x; z++) {
+                    System.out.print(x);
+                }
+            }
+            System.out.println("");
         }
     }
 
